@@ -1,0 +1,12 @@
+<div class="well">
+  <%= tweet.user.name %> | <%= link_to tweet.user.username,
+                               show_user_path(id: tweet.user_id) %>
+  <% if tweet.created_at > 1.day.ago %>
+    <%= time_ago_in_words tweet.created_at %>
+  <% else %>
+    <%= tweet.created_at.strftime('%b %d') %>
+  <% end %>
+  <div>
+    <%= tweet.message.html_safe %>
+  </div>
+</div>

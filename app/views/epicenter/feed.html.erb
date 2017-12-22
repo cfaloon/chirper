@@ -1,0 +1,5 @@
+<h2>Welcome </h2><h1><%= current_user.username %></h1>
+
+<% @following_tweets.each do |tweet| %>
+  <%= render 'tweets/tweet', tweet: tweet %>
+<% end %>

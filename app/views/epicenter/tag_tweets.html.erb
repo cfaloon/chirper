@@ -1,0 +1,5 @@
+<h1>Showing tweets for <%= @tag.phrase %></h1>
+
+<% @tweets.each do |tweet| %>
+  <%= render 'tweets/tweet', tweet: tweet %>
+<% end %>

@@ -1,0 +1,12 @@
+<div class="col-sm-4">
+  <%= link_to show_user_path(id: user.id) do %>
+  <div class="panel panel-info">
+    <div class="panel-heading">
+      <%= user.name %> | <%= user.username %>
+    </div>
+    <div class="panel-body">
+      <%= user.bio %>
+    </div>
+  </div>
+  <% end %>
+</div>

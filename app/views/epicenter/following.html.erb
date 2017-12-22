@@ -1,0 +1,7 @@
+<h1>Who you follow</h1>
+
+<div class="row">
+  <% @users.each do |user| %>
+    <%= render 'user_panel', user: user %>
+  <% end %>
+</div>
